@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5">
+        <h1 class="text-white">히포의 중고마켓</h1>
+        <h2 class="text-white">마채에게 물건을 팝니다!</h2>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- 냄비 카드 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; height: 350px">
+                    <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="냄비 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">냄비</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                        <p class="card-text">
+                            한 번 밖에 안 쓴 냄비 팝니다. 부모님이 독립할 때 주신 거에요!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 전기밥솥 카드 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; height: 350px">
+                    <img src="https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUIwJUE1JUVDJTg2JUE1fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="전기밥솥 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">전기밥솥</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">8만원</h6>
+                        <p class="card-text">
+                            거의 사용하지 않은 전기밥솥 팝니다. 상태 양호합니다.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 주전자 카드 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; height: 350px">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="주전자 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">청소기</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
+                        <p class="card-text">흡입력이 엄청난 청소기를 판매합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
